@@ -114,6 +114,10 @@
                         </div>
                 </div>
             </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                <a href="/" class="btn btn-primary">Kembali</a>
+            </div>
             </form>
         </div>  
     </div>

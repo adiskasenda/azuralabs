@@ -165,7 +165,7 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary tambahph">Submit</button>
+                <button type="submit" class="btn btn-primary tambah">Tambah</button>
             </div>
             </form>
         </div>  

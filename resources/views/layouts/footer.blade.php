@@ -38,3 +38,15 @@ $(document).ready( function () {
       });
     });
   </script>
+
+<script>
+  $('.tambah').click(function(){
+      swal("Selamat!", "Data berhasil ditambahkan", "success"); 
+  })
+</script>
+
+<script>
+  $('.edit').click(function(){
+    swal("Selamat!", "Data berhasil diubah", "success");
+  })
+</script>
