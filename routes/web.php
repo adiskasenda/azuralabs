@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('menu/beranda');
-});
+// Route::get('/', function () {
+//     return view('menu/beranda');
+// });
+Route::get('/', [App\Http\Controllers\DiklatController::class, 'index']);
 
