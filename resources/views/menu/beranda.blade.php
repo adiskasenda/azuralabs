@@ -1,7 +1,12 @@
 @extends('layouts/main')
 @section('title', 'Beranda')
 @section('content')
-<div class="row"></div>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+    <a href="/tambah" class="btn btn-primary">Tambah</a>
+</div>
+</div>
 <div class="row">
 <div class="col-md-1"></div>
     <div class="col-md-10">

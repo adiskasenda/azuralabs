@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('menu/beranda');
 // });
 Route::get('/', [App\Http\Controllers\DiklatController::class, 'index']);
+Route::get('/tambah', [App\Http\Controllers\DiklatController::class, 'create']);
 
