@@ -19,4 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\DiklatController::class, 'index']);
 Route::get('/tambah', [App\Http\Controllers\DiklatController::class, 'create']);
 Route::post('/tambah', [App\Http\Controllers\DiklatController::class, 'store']);
+Route::get('/{diklat}/delete', [App\Http\Controllers\DiklatController::class, 'destroy']);
 

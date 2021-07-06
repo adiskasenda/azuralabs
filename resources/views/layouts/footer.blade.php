@@ -6,8 +6,35 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 {{-- js datatable --}}
 <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
 $(document).ready( function () {
     $('#myTable').DataTable();
 } );
 </script>
+
+<script>
+    $('.hapus').click(function(){
+      var id = $(this).attr('id');
+      swal({
+        title: "Kamu Yakin?",
+        text: "Data ini mau dihapus??",  
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          window.location = "/"+id+"/delete";
+          swal("Selamat! Data berhasil dihapus!", {
+            icon: "success",
+          });
+        }  
+      });
+    });
+  </script>

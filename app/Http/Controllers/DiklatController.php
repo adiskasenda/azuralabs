@@ -83,6 +83,7 @@ class DiklatController extends Controller
      */
     public function destroy(Diklat $diklat)
     {
-        //
+        Diklat::destroy($diklat->id);
+        return redirect('/')->with('sukses', 'Data berhasil dihapus');
     }
 }
