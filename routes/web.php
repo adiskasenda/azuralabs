@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [App\Http\Controllers\DiklatController::class, 'index']);
 Route::get('/tambah', [App\Http\Controllers\DiklatController::class, 'create']);
+Route::post('/tambah', [App\Http\Controllers\DiklatController::class, 'store']);
 

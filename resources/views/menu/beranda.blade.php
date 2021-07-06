@@ -4,7 +4,7 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-10">
-    <a href="/tambah" class="btn btn-primary">Tambah</a>
+    <a href="/tambah" class="btn btn-primary my-3">Tambah</a>
 </div>
 </div>
 <div class="row">

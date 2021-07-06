@@ -36,7 +36,9 @@ class DiklatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // return $request;
+        Diklat::create($request->all());
+        return redirect('/');
     }
 
     /**
