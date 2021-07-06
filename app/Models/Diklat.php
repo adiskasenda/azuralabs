@@ -9,4 +9,5 @@ class Diklat extends Model
 {
     use HasFactory;
     protected $table = 'diklat';
+    protected $guarded = ['id'];
 }

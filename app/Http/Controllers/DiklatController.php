@@ -25,7 +25,7 @@ class DiklatController extends Controller
      */
     public function create()
     {
-        //
+        return view('menu/tambah');
     }
 
     /**
