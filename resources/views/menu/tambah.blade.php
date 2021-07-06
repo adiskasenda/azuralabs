@@ -138,7 +138,7 @@
                 <div class="mb-2 row">
                     <label for="lokasi" class="col-sm-3 col-form-label">Lokasi</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control @error('nama') is-invalid @enderror" id="inputPassword" placeholder="Masukkan Lokasi" name="lokasi" value="{{ old('nama') }}">
+                            <input type="text" class="form-control @error('nama') is-invalid @enderror" id="inputPassword" placeholder="Masukkan Lokasi" name="tempat" value="{{ old('nama') }}">
                             @error('nama')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror

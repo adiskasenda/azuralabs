@@ -49,7 +49,7 @@ class DiklatController extends Controller
      */
     public function show(Diklat $diklat)
     {
-        //
+        return view('menu/detail', compact('diklat'));
     }
 
     /**

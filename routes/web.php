@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('menu/beranda');
 // });
 Route::get('/', [App\Http\Controllers\DiklatController::class, 'index']);
+Route::get('/detail/{diklat}', [App\Http\Controllers\DiklatController::class, 'show']);
 Route::get('/tambah', [App\Http\Controllers\DiklatController::class, 'create']);
 Route::post('/tambah', [App\Http\Controllers\DiklatController::class, 'store']);
 Route::get('/{diklat}/delete', [App\Http\Controllers\DiklatController::class, 'destroy']);
