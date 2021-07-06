@@ -20,5 +20,7 @@ Route::get('/', [App\Http\Controllers\DiklatController::class, 'index']);
 Route::get('/detail/{diklat}', [App\Http\Controllers\DiklatController::class, 'show']);
 Route::get('/tambah', [App\Http\Controllers\DiklatController::class, 'create']);
 Route::post('/tambah', [App\Http\Controllers\DiklatController::class, 'store']);
+Route::get('/edit/{diklat}', [App\Http\Controllers\DiklatController::class, 'edit']);
+Route::patch('/edit/{diklat}', [App\Http\Controllers\DiklatController::class, 'update']);
 Route::get('/{diklat}/delete', [App\Http\Controllers\DiklatController::class, 'destroy']);
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Diklat;
 use Illuminate\Http\Request;
 
+use function GuzzleHttp\Promise\all;
+
 class DiklatController extends Controller
 {
     /**
@@ -60,7 +62,7 @@ class DiklatController extends Controller
      */
     public function edit(Diklat $diklat)
     {
-        //
+        return view('menu/edit', compact('diklat'));
     }
 
     /**
@@ -72,7 +74,25 @@ class DiklatController extends Controller
      */
     public function update(Request $request, Diklat $diklat)
     {
-        //
+        Diklat::where('id', $diklat->id)
+                ->update([
+                    'nama' => $request->nama,
+                    'jenis' => $request->jenis,
+                    'deskripsi' => $request->deskripsi,
+                    'penyelenggara' => $request->penyelenggara,
+                    'biaya' => $request->biaya,
+                    'jumlahPeserta' => $request->jumlahPeserta,
+                    'kadaluarsaSertifikat' => $request->kadaluarsaSertifikat,
+                    'sertifikat' => $request->sertifikat,
+                    'tanggalMulai' => $request->tanggalMulai,
+                    'tanggalSelesai' => $request->tanggalSelesai,
+                    'waktuMulai' => $request->waktuMulai,
+                    'durasi' => $request->durasi,
+                    'tempat' => $request->tempat,
+                    'createdBy' => $request->createdBy,
+                    'updatedBy' => $request->updatedBy,
+                ]);
+        return redirect('/');
     }
 
     /**

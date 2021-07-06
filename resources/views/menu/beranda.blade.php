@@ -39,7 +39,7 @@
                         <td>{{ $item->tempat }}</td>
                         <td>
                             <a href="/detail/{{ $item->id }}" class="btn btn-primary btn-sm"><i class="fa fa-cog"></i> Detail</a>
-                            <a href="/detail/{{ $item->id }}" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</a>
+                            <a href="/edit/{{ $item->id }}" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</a>
                             <a href="#" class="btn btn-danger btn-sm hapus" id="{{ $item->id }}"><i class="fa fa-trash-o"></i> Hapus</a>
                         </td>
                     </tr>
