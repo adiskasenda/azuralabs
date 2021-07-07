@@ -1,12 +1,6 @@
 @extends('layouts/main')
 @section('title', 'Detail Diklat')
 @section('content')
-<div class="row">
-<div class="col-md-1"></div>
-<div class="col-md-10">
-    <input type="hidden">
-</div>
-</div>
 
 <div class="row">
 <div class="col-md-1"></div>
