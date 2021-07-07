@@ -38,9 +38,11 @@
                         <td>{{ $item->durasi }}</td>
                         <td>{{ $item->tempat }}</td>
                         <td>
-                            <a href="/detail/{{ $item->id }}" class="btn btn-primary btn-sm"><i class="fa fa-cog"></i> Detail</a>
-                            <a href="/edit/{{ $item->id }}" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</a>
-                            <a href="#" class="btn btn-danger btn-sm hapus" id="{{ $item->id }}"><i class="fa fa-trash-o"></i> Hapus</a>
+                            <div class="btn-group btn-group-sm">
+                                <a href="/detail/{{ $item->id }}" class="btn btn-primary btn-sm"><i class="fa fa-cog"></i> Detail</a>
+                                <a href="/edit/{{ $item->id }}" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm hapus" id="{{ $item->id }}"><i class="fa fa-trash-o"></i> Hapus</a>
+                            </div>
                         </td>
                     </tr>
                 @endforeach

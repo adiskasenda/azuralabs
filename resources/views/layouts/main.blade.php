@@ -16,6 +16,9 @@
     
 @yield('content')
 
+<div class="flex-container">
+  Made by Adis Kasenda with &nbsp <span style="color: #e25555;">&#9829;</span>
+</div>
 @include('layouts/footer')
 </body>
 </html>

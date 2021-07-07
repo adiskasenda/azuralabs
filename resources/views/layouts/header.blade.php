@@ -11,5 +11,20 @@
     {{-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
     {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <style type="text/css">
+        .row
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .navbar-brand{
+            margin-left: 15px;
+        }
+        .flex-container {
+            line-height: 50px;
+            display: flex;
+            background-color: rgb(233, 233, 233);
+            justify-content: center;
+        }
+    </style>
 </head>
